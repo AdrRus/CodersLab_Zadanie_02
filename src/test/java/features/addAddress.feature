@@ -7,6 +7,7 @@ Feature: Dodawanie nowego adresu
     And Użytkownik klika w pole New address na stronie NewAddressPage
     And Użytkownik wypełnia formularz danymi "<alias>","<address>","<city>","<zipPost>",country,"<phone>"
     Then Użytkownik zostaje przeniesiony na strone z nowym adresem i sprawdza poprawność danych
+    And Uzytkownik kasuje dodany adres
     And Zamykanie przeglądarki
     Examples:
       |alias  |address    |city |zipPost|phone    |

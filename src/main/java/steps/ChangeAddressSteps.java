@@ -57,6 +57,11 @@ public class ChangeAddressSteps {
         NewAddressPage newAddressPage = new NewAddressPage(driver);
         newAddressPage.successfullyAdded();
     }
+    @And("Uzytkownik kasuje dodany adres")
+    public void deleteAddress(){
+        NewAddressPage newAddressPage = new NewAddressPage(driver);
+        newAddressPage.deleteAddAddress();
+    }
 
     @And("Zamykanie przeglądarki")
     public void tearDown(){
